@@ -1,40 +1,63 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
-
-# Temporary files
-*.000
+# =====================
+# KiCad
+# =====================
 *.bak
-*.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*-backups
-*-cache*
-*-bak
-*-bak*
-*~
-~*
-_autosave-*
-\#auto_saved_files\#
-*.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-~*.lck
-\#auto_saved_files#
-
-# Netlist files (exported from Eeschema)
-*.net
-
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Exported BOM files
-*.xml
-*.csv
-
-# Archived Backups (KiCad 6.0)
-**/*-backups/*.zip
-
-# Local project settings
 *.kicad_prl
+*.kicad_pro
+*-backups/
+fp-info-cache
+_autosave-*
+*.000
+*.stash
+
+# KiCad outputs (keep top.net only if desired)
+# *.net
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv
+
+# =====================
+# IDEs & Editors
+# =====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =====================
+# OS
+# =====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================
+# Logs
+# =====================
+*.log
+skidl.log
