@@ -1,438 +1,343 @@
-"""
-SKiDL script generated from AxxSolder.kicad_sch
-Total components : 146
-Standard parts   : 114
-Custom stub parts: 32
-"""
-
+# -*- coding: utf-8 -*-
 from skidl import *
 
-
-# ═══════════════════════════════════════════════════════════════
-# CUSTOM PART STUBS
-# Vendor/custom parts not in KiCad standard libraries.
-# Defined here so the script runs without needing external libs.
-# ═══════════════════════════════════════════════════════════════
-
-Adafruit_240x320_TFT = SchLib(tool=SKIDL)
-MAX16171ATA_VY_T = SchLib(tool=SKIDL)
-PEC11J_9215F_S0015 = SchLib(tool=SKIDL)
-TSW_108_07_T_S = SchLib(tool=SKIDL)
-ADTSM644KVTR = SchLib(tool=SKIDL)
-SMF4L24AT1G = SchLib(tool=SKIDL)
-WSLP25125L000FEA = SchLib(tool=SKIDL)
-OPA2387DSGT = SchLib(tool=SKIDL)
-TLV76733DRVR = SchLib(tool=SKIDL)
-EEV227M035A9MAA = SchLib(tool=SKIDL)
-part_61300611821 = SchLib(tool=SKIDL)
-PMEG6020ER_115 = SchLib(tool=SKIDL)
-STL10N3LLH5 = SchLib(tool=SKIDL)
-BAV199WQ_7 = SchLib(tool=SKIDL)
-INA281A5QDBVRQ1 = SchLib(tool=SKIDL)
-part_2N7002NXAKR = SchLib(tool=SKIDL)
-LTC4440AHMS8E_5_PBF = SchLib(tool=SKIDL)
-TPD4E1U06DBVR = SchLib(tool=SKIDL)
-STM32G431CBT6 = SchLib(tool=SKIDL)
-BSC014N04LS = SchLib(tool=SKIDL)
-SF_2410FP100W_2 = SchLib(tool=SKIDL)
-USB4110_GF_A = SchLib(tool=SKIDL)
-STUSB4500QTR = SchLib(tool=SKIDL)
-SRP7028CC_150M = SchLib(tool=SKIDL)
-part_691243110009 = SchLib(tool=SKIDL)
-BLM18HE601SN1D = SchLib(tool=SKIDL)
-STL9P3LLH6 = SchLib(tool=SKIDL)
-
-# TFT1 — Adafruit_240x320_TFT (~)
-Adafruit_240x320_TFT += Part(tool=SKIDL, name="Adafruit_240x320_TFT",
-    ref_prefix="TFT",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR)])
-
-# IC7 — MAX16171ATA_VY+T (MAX16171ATA_VY+T)
-MAX16171ATA_VY_T += Part(tool=SKIDL, name="MAX16171ATA_VY+T",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR)])
-
-# U2 — PEC11J-9220F-S0015 (PEC11J-9215F-S0015)
-PEC11J_9215F_S0015 += Part(tool=SKIDL, name="PEC11J-9220F-S0015",
-    ref_prefix="U",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR)])
-
-# J7 — TSW-108-07-T-S (TSW-108-07-T-S)
-TSW_108_07_T_S += Part(tool=SKIDL, name="TSW-108-07-T-S",
-    ref_prefix="J",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR)])
-
-# S3 — ADTSM644KVTR (ADTSM644RVTR)
-ADTSM644KVTR += Part(tool=SKIDL, name="ADTSM644KVTR",
-    ref_prefix="S",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# D3 — SMF4L24AT1G (SMF4L24AT1G)
-SMF4L24AT1G += Part(tool=SKIDL, name="SMF4L24AT1G",
-    ref_prefix="D",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# R42 — WSLP25125L000FEA (5m)
-WSLP25125L000FEA += Part(tool=SKIDL, name="WSLP25125L000FEA",
-    ref_prefix="R",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# IC2 — OPA2387DSGT (OPA2387DSGT)
-OPA2387DSGT += Part(tool=SKIDL, name="OPA2387DSGT",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR)])
-
-# IC1 — TLV76733DRVR (TLV76733DRVR)
-TLV76733DRVR += Part(tool=SKIDL, name="TLV76733DRVR",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR)])
-
-# C37 — EEV227M035A9MAA (220u)
-EEV227M035A9MAA += Part(tool=SKIDL, name="EEV227M035A9MAA",
-    ref_prefix="C",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# J4 — 61300611821 (61300611821)
-part_61300611821 += Part(tool=SKIDL, name="61300611821",
-    ref_prefix="J",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR)])
-
-# D10 — PMEG6020ER,115 (PMEG6020ER)
-PMEG6020ER_115 += Part(tool=SKIDL, name="PMEG6020ER,115",
-    ref_prefix="D",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# Q2 — STL10N3LLH5 (STL10N3LLH5)
-STL10N3LLH5 += Part(tool=SKIDL, name="STL10N3LLH5",
-    ref_prefix="Q",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR)])
-
-# D1 — BAV199WQ-7 (BAV199WQ-7)
-BAV199WQ_7 += Part(tool=SKIDL, name="BAV199WQ-7",
-    ref_prefix="D",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR)])
-
-# IC9 — INA281A5QDBVRQ1 (INA281A5QDBVRQ1)
-INA281A5QDBVRQ1 += Part(tool=SKIDL, name="INA281A5QDBVRQ1",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR)])
-
-# Q3 — 2N7002NXAKR (2N7002NXAKR)
-part_2N7002NXAKR += Part(tool=SKIDL, name="2N7002NXAKR",
-    ref_prefix="Q",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR)])
-
-# IC8 — LTC4440AHMS8E-5#PBF (LTC4440AHMS8E)
-LTC4440AHMS8E_5_PBF += Part(tool=SKIDL, name="LTC4440AHMS8E-5#PBF",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR)])
-
-# IC5 — TPD4E1U06DBVR (TPD4E1U06DBVR)
-TPD4E1U06DBVR += Part(tool=SKIDL, name="TPD4E1U06DBVR",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR)])
-
-# IC4 — STM32G431CBT6 (STM32G431CBT6)
-STM32G431CBT6 += Part(tool=SKIDL, name="STM32G431CBT6",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR), Pin(num=10, name="p10", func=Pin.types.BIDIR), Pin(num=11, name="p11", func=Pin.types.BIDIR), Pin(num=12, name="p12", func=Pin.types.BIDIR), Pin(num=13, name="p13", func=Pin.types.BIDIR), Pin(num=14, name="p14", func=Pin.types.BIDIR), Pin(num=15, name="p15", func=Pin.types.BIDIR), Pin(num=16, name="p16", func=Pin.types.BIDIR), Pin(num=17, name="p17", func=Pin.types.BIDIR), Pin(num=18, name="p18", func=Pin.types.BIDIR), Pin(num=19, name="p19", func=Pin.types.BIDIR), Pin(num=20, name="p20", func=Pin.types.BIDIR), Pin(num=21, name="p21", func=Pin.types.BIDIR), Pin(num=22, name="p22", func=Pin.types.BIDIR), Pin(num=23, name="p23", func=Pin.types.BIDIR), Pin(num=24, name="p24", func=Pin.types.BIDIR), Pin(num=25, name="p25", func=Pin.types.BIDIR), Pin(num=26, name="p26", func=Pin.types.BIDIR), Pin(num=27, name="p27", func=Pin.types.BIDIR), Pin(num=28, name="p28", func=Pin.types.BIDIR), Pin(num=29, name="p29", func=Pin.types.BIDIR), Pin(num=30, name="p30", func=Pin.types.BIDIR), Pin(num=31, name="p31", func=Pin.types.BIDIR), Pin(num=32, name="p32", func=Pin.types.BIDIR), Pin(num=33, name="p33", func=Pin.types.BIDIR), Pin(num=34, name="p34", func=Pin.types.BIDIR), Pin(num=35, name="p35", func=Pin.types.BIDIR), Pin(num=36, name="p36", func=Pin.types.BIDIR), Pin(num=37, name="p37", func=Pin.types.BIDIR), Pin(num=38, name="p38", func=Pin.types.BIDIR), Pin(num=39, name="p39", func=Pin.types.BIDIR), Pin(num=40, name="p40", func=Pin.types.BIDIR), Pin(num=41, name="p41", func=Pin.types.BIDIR), Pin(num=42, name="p42", func=Pin.types.BIDIR), Pin(num=43, name="p43", func=Pin.types.BIDIR), Pin(num=44, name="p44", func=Pin.types.BIDIR), Pin(num=45, name="p45", func=Pin.types.BIDIR), Pin(num=46, name="p46", func=Pin.types.BIDIR), Pin(num=47, name="p47", func=Pin.types.BIDIR), Pin(num=48, name="p48", func=Pin.types.BIDIR)])
-
-# U3 — BSC014N04LS (BSC014N04LS)
-BSC014N04LS += Part(tool=SKIDL, name="BSC014N04LS",
-    ref_prefix="U",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR)])
-
-# F2 — SF-2410FP100W-2 (SF-2410FP100W-2)
-SF_2410FP100W_2 += Part(tool=SKIDL, name="SF-2410FP100W-2",
-    ref_prefix="F",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# J1 — USB4110-GF-A (USB4110-GF-A)
-USB4110_GF_A += Part(tool=SKIDL, name="USB4110-GF-A",
-    ref_prefix="J",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR), Pin(num=10, name="p10", func=Pin.types.BIDIR), Pin(num=11, name="p11", func=Pin.types.BIDIR), Pin(num=12, name="p12", func=Pin.types.BIDIR), Pin(num=13, name="p13", func=Pin.types.BIDIR), Pin(num=14, name="p14", func=Pin.types.BIDIR), Pin(num=15, name="p15", func=Pin.types.BIDIR), Pin(num=16, name="p16", func=Pin.types.BIDIR), Pin(num=17, name="p17", func=Pin.types.BIDIR)])
-
-# IC6 — STUSB4500QTR (STUSB4500QTR)
-STUSB4500QTR += Part(tool=SKIDL, name="STUSB4500QTR",
-    ref_prefix="IC",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR), Pin(num=10, name="p10", func=Pin.types.BIDIR), Pin(num=11, name="p11", func=Pin.types.BIDIR), Pin(num=12, name="p12", func=Pin.types.BIDIR), Pin(num=13, name="p13", func=Pin.types.BIDIR), Pin(num=14, name="p14", func=Pin.types.BIDIR), Pin(num=15, name="p15", func=Pin.types.BIDIR), Pin(num=16, name="p16", func=Pin.types.BIDIR), Pin(num=17, name="p17", func=Pin.types.BIDIR), Pin(num=18, name="p18", func=Pin.types.BIDIR)])
-
-# L1 — SRP7028CC-150M (SRP7028CC-150M)
-SRP7028CC_150M += Part(tool=SKIDL, name="SRP7028CC-150M",
-    ref_prefix="L",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# J2 — 691243110009 (691243110009)
-part_691243110009 += Part(tool=SKIDL, name="691243110009",
-    ref_prefix="J",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR), Pin(num=4, name="p4", func=Pin.types.BIDIR), Pin(num=5, name="p5", func=Pin.types.BIDIR), Pin(num=6, name="p6", func=Pin.types.BIDIR), Pin(num=7, name="p7", func=Pin.types.BIDIR), Pin(num=8, name="p8", func=Pin.types.BIDIR), Pin(num=9, name="p9", func=Pin.types.BIDIR)])
-
-# FB1 — BLM18HE601SN1D (BLM18HE601SN1D)
-BLM18HE601SN1D += Part(tool=SKIDL, name="BLM18HE601SN1D",
-    ref_prefix="FB",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR)])
-
-# Q1 — STL9P3LLH6 (STL9P3LLH6)
-STL9P3LLH6 += Part(tool=SKIDL, name="STL9P3LLH6",
-    ref_prefix="Q",
-    pins=[Pin(num=1, name="p1", func=Pin.types.BIDIR), Pin(num=2, name="p2", func=Pin.types.BIDIR), Pin(num=3, name="p3", func=Pin.types.BIDIR)])
+# ---------------------------------------------------------------------------
+# Custom parts defined inline - no external .kicad_sym files needed
+# ---------------------------------------------------------------------------
+def _make_part(name, sym_name, pins, **kwargs):
+    tmpl = Part(tool=SKIDL, name=sym_name, dest=TEMPLATE)
+    for p in pins:
+        tmpl += Pin(num=str(p), name=str(p), func=Pin.types.BIDIR)
+    return tmpl(**kwargs)
 
 
 @subcircuit
-def AxxSolder():
+def top():
+    # Local nets
+    _p_3_3V = Net('+3.3V')
+    _p_7_5V = Net('+7.5V')
+    BLUE = Net('/BLUE')
+    BOOST = Net('/BOOST')
+    Buzzer = Net('/Buzzer')
+    CC1 = Net('/CC1')
+    CC1_ = Net('/CC1_')
+    CC2 = Net('/CC2')
+    CC2_ = Net('/CC2_')
+    CURRENT = Net('/CURRENT')
+    ENC_A = Net('/ENC_A')
+    ENC_B = Net('/ENC_B')
+    GREEN = Net('/GREEN')
+    H_sense1 = Net('/H_sense1')
+    H_sense2 = Net('/H_sense2')
+    Handle_inp1 = Net('/Handle_inp1')
+    Handle_inp2 = Net('/Handle_inp2')
+    Heater = Net('/Heater')
+    I_LEAK = Net('/I_LEAK')
+    NRST = Net('/NRST')
+    RED = Net('/RED')
+    S1 = Net('/S1')
+    SCL = Net('/SCL')
+    SDA = Net('/SDA')
+    SD_CS = Net('/SD_CS')
+    SPI_CS = Net('/SPI_CS')
+    SPI_DC = Net('/SPI_DC')
+    SPI_MOSI = Net('/SPI_MOSI')
+    SPI_RST = Net('/SPI_RST')
+    SPI_SCK = Net('/SPI_SCK')
+    SW1 = Net('/SW1')
+    SW2 = Net('/SW2')
+    SW3 = Net('/SW3')
+    SWCLK = Net('/SWCLK')
+    SWDIO = Net('/SWDIO')
+    S_sense = Net('/S_sense')
+    Stand_inp = Net('/Stand_inp')
+    TC = Net('/TC')
+    USART_RX = Net('/USART_RX')
+    USART_TX = Net('/USART_TX')
+    USB_D_p = Net('/USB_D+')
+    USB_D_n = Net('/USB_D-')
+    USR1 = Net('/USR1')
+    USR2 = Net('/USR2')
+    USR3 = Net('/USR3')
+    USR4 = Net('/USR4')
+    VBUS = Net('/VBUS')
+    VBUS_IN = Net('/VBUS_IN')
+    VCCA = Net('/VCCA')
+    VDD_IN = Net('/VDD_IN')
+    VDD_IN_USBCPD = Net('/VDD_IN_USBCPD')
+    Earth = Net('Earth')
+    GND = Net('GND')
+    Net__C24_Pad1_ = Net('Net-(C24-Pad1)')
+    Net__C9_Pad1_ = Net('Net-(C9-Pad1)')
+    Net__IC2_Pad1_ = Net('Net-(IC2-Pad1)')
+    Net__IC2_Pad7_ = Net('Net-(IC2-Pad7)')
+    Net__IC2A_pos = Net('Net-(IC2A-+)')
+    Net__IC2A_neg = Net('Net-(IC2A--)')
+    Net__IC2B_pos = Net('Net-(IC2B-+)')
+    Net__IC2B_neg = Net('Net-(IC2B--)')
+    Net__IC3_CB_ = Net('Net-(IC3-CB)')
+    Net__IC3_FB_ = Net('Net-(IC3-FB)')
+    Net__IC3_SW_ = Net('Net-(IC3-SW)')
+    Net__IC6_DISCH_ = Net('Net-(IC6-DISCH)')
+    Net__IC6_VBUS_EN_SNK_ = Net('Net-(IC6-VBUS_EN_SNK)')
+    Net__IC6_VBUS_VS_DISCH_ = Net('Net-(IC6-VBUS_VS_DISCH)')
+    Net__IC6_VREG_1V2_ = Net('Net-(IC6-VREG_1V2)')
+    Net__IC6_VREG_2V7_ = Net('Net-(IC6-VREG_2V7)')
+    Net__IC7_GATE_ = Net('Net-(IC7-GATE)')
+    Net__IC8_TG_ = Net('Net-(IC8-TG)')
+    Net__IC9_IN__ = Net('Net-(IC9-IN+)')
+    Net__LS1___ = Net('Net-(LS1--)')
+    Net__Q1_G_ = Net('Net-(Q1-G)')
+    Net__Q3_G_ = Net('Net-(Q3-G)')
+    Net__R21_Pad1_ = Net('Net-(R21-Pad1)')
+    Net__R43_Pad2_ = Net('Net-(R43-Pad2)')
+    Net__R46_Pad2_ = Net('Net-(R46-Pad2)')
+    Net__R47_Pad2_ = Net('Net-(R47-Pad2)')
+    Net__R48_Pad2_ = Net('Net-(R48-Pad2)')
+    VDD = Net('VDD')
 
-    # ─── Power Nets ───────────────────────────────────────────
-    VDD  = Net("VDD")
-    GND  = Net("GND")
-    V3_3 = Net("+3.3V")
-    V7_5 = Net("+7.5V")
-
-    # ─── Signal Nets ──────────────────────────────────────────
-    BLUE                   = Net("BLUE")
-    BOOST                  = Net("BOOST")
-    Buzzer                 = Net("Buzzer")
-    CC1                    = Net("CC1")
-    CC1_                   = Net("CC1_")
-    CC2                    = Net("CC2")
-    CC2_                   = Net("CC2_")
-    CURRENT                = Net("CURRENT")
-    EARTH                  = Net("EARTH")
-    ENC_A                  = Net("ENC_A")
-    ENC_B                  = Net("ENC_B")
-    GREEN                  = Net("GREEN")
-    H_sense1               = Net("H_sense1")
-    H_sense2               = Net("H_sense2")
-    Handle_inp1            = Net("Handle_inp1")
-    Handle_inp2            = Net("Handle_inp2")
-    Heater                 = Net("Heater")
-    I_LEAK                 = Net("I_LEAK")
-    NRST                   = Net("NRST")
-    RED                    = Net("RED")
-    S1                     = Net("S1")
-    SCL                    = Net("SCL")
-    SDA                    = Net("SDA")
-    SD_CS                  = Net("SD_CS")
-    SHUNT_                 = Net("SHUNT+")
-    SHUNT_                 = Net("SHUNT-")
-    SPI_CS                 = Net("SPI_CS")
-    SPI_DC                 = Net("SPI_DC")
-    SPI_MOSI               = Net("SPI_MOSI")
-    SPI_RST                = Net("SPI_RST")
-    SPI_SCK                = Net("SPI_SCK")
-    SW1                    = Net("SW1")
-    SW2                    = Net("SW2")
-    SW3                    = Net("SW3")
-    SWCLK                  = Net("SWCLK")
-    SWDIO                  = Net("SWDIO")
-    S_sense                = Net("S_sense")
-    Stand_inp              = Net("Stand_inp")
-    TC                     = Net("TC")
-    USART_RX               = Net("USART_RX")
-    USART_TX               = Net("USART_TX")
-    USB_D_                 = Net("USB_D+")
-    USB_D_                 = Net("USB_D-")
-    USR1                   = Net("USR1")
-    USR2                   = Net("USR2")
-    USR3                   = Net("USR3")
-    USR4                   = Net("USR4")
-    VBUS                   = Net("VBUS")
-    VBUS_IN                = Net("VBUS_IN")
-    VCC                    = Net("VCC")
-    VCCA                   = Net("VCCA")
-    VDD_IN                 = Net("VDD_IN")
-    VDD_IN_USBCPD          = Net("VDD_IN_USBCPD")
-    VSS                    = Net("VSS")
-    VSSA                   = Net("VSSA")
-    V_bit1                 = Net("V_bit1")
-    V_bit2                 = Net("V_bit2")
-    V_bit3                 = Net("V_bit3")
-
-    # ─── Components ───────────────────────────────────────────
-
-    # --- Capacitors ---
-    c21 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c2 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c14 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c3 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c18 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c35 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c30 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c10 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c17 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c37 = Part(EEV227M035A9MAA, "EEV227M035A9MAA", footprint="CAPAE830X1050N", value="220u")
-    c25 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c32 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c9 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c31 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c26 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c13 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c11 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c33 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c7 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c23 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c22 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c29 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c34 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c16 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c19 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c5 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c20 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c8 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c15 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c27 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c24 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c1 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-    c4 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="1n")
-    c6 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="1n")
-    c28 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="100n")
-    c12 = Part("Device", "C_Small", footprint="Capacitor_SMD:C_0603_1608Metric", value="10u")
-
-    # --- Diodes ---
-    d8 = Part("Device", "D_Schottky_Dual_Series_AKC", footprint="footprints:SOT95P230X110-3N", value="BAT54S")
-    d6 = Part("Device", "D_Schottky_Dual_Series_AKC", footprint="footprints:SOT95P230X110-3N", value="BAT54S")
-    d3 = Part(SMF4L24AT1G, "SMF4L24AT1G", footprint="footprints:SODFL3619X98N", value="SMF4L24AT1G")
-    d7 = Part("Device", "D_Schottky_Dual_Series_AKC", footprint="footprints:SOT95P230X110-3N", value="BAT54S")
-    d5 = Part("Device", "D_Schottky_Dual_Series_AKC", footprint="footprints:SOT95P230X110-3N", value="BAT54S")
-    d10 = Part(PMEG6020ER_115, "PMEG6020ER,115", footprint="footprints:PMEG6020ER115", value="PMEG6020ER")
-    d1 = Part(BAV199WQ_7, "BAV199WQ-7", footprint="footprints:SOT65P210X110-3N", value="BAV199WQ-7")
-    d2 = Part(BAV199WQ_7, "BAV199WQ-7", footprint="footprints:SOT65P210X110-3N", value="BAV199WQ-7")
-    d9 = Part(PMEG6020ER_115, "PMEG6020ER,115", footprint="footprints:PMEG6020ER115", value="PMEG6020ER")
-    d4 = Part(SMF4L24AT1G, "SMF4L24AT1G", footprint="footprints:SODFL3619X98N", value="SMF4L24AT1G")
-
-    # --- Fuses ---
-    f2 = Part(SF_2410FP100W_2, "SF-2410FP100W-2", footprint="footprints:SF2410FP100W2", value="SF-2410FP100W-2")
-
-    # --- Ferrite Beads ---
-    fb1 = Part(BLM18HE601SN1D, "BLM18HE601SN1D", footprint="Resistor_SMD:R_0603_1608Metric", value="BLM18HE601SN1D")
-
-    # --- Fiducials ---
-    fid3 = Part("Mechanical", "Fiducial", footprint="Fiducial:Fiducial_0.75mm_Mask1.5mm", value="Fiducial")
-    fid2 = Part("Mechanical", "Fiducial", footprint="Fiducial:Fiducial_0.75mm_Mask1.5mm", value="Fiducial")
-    fid1 = Part("Mechanical", "Fiducial", footprint="Fiducial:Fiducial_0.75mm_Mask1.5mm", value="Fiducial")
-
-    # --- Mounting Holes ---
-    h1 = Part("Mechanical", "MountingHole", footprint="MountingHole:MountingHole_2.5mm", value="MountingHole")
-    h2 = Part("Mechanical", "MountingHole", footprint="MountingHole:MountingHole_2.5mm", value="MountingHole")
-
-    # --- Integrated Circuits ---
-    ic7 = Part(MAX16171ATA_VY_T, "MAX16171ATA_VY+T", footprint="footprints:SON50P300X200X80-9N", value="MAX16171ATA_VY+T")
-    ic2 = Part(OPA2387DSGT, "OPA2387DSGT", footprint="footprints:SON50P200X200X80-9N", value="OPA2387DSGT")
-    ic1 = Part(TLV76733DRVR, "TLV76733DRVR", footprint="footprints:SON65P200X200X80-7N", value="TLV76733DRVR")
-    ic9 = Part(INA281A5QDBVRQ1, "INA281A5QDBVRQ1", footprint="footprints:SOT95P280X145-5N", value="INA281A5QDBVRQ1")
-    ic8 = Part(LTC4440AHMS8E_5_PBF, "LTC4440AHMS8E-5#PBF", footprint="footprints:SOP65P490X110-9N", value="LTC4440AHMS8E")
-    ic5 = Part(TPD4E1U06DBVR, "TPD4E1U06DBVR", footprint="SOT95P280X145-6N", value="TPD4E1U06DBVR")
-    ic4 = Part(STM32G431CBT6, "STM32G431CBT6", footprint="footprints:QFP50P900X900X160-48N", value="STM32G431CBT6")
-    ic6 = Part(STUSB4500QTR, "STUSB4500QTR", footprint="footprints:QFN50P400X400X100-25N-D", value="STUSB4500QTR")
-
-    # --- Connectors ---
-    j7 = Part(TSW_108_07_T_S, "TSW-108-07-T-S", footprint="TSW-108-XX-YY-S", value="TSW-108-07-T-S")
-    j4 = Part(part_61300611821, "61300611821", footprint="footprints:RHDR6W97P0X254_1X6_1574X250X865P", value="61300611821")
-    j8 = Part("Connector", "Conn_01x01_Pin", footprint="", value="Conn_01x01_Pin")
-    j1 = Part(USB4110_GF_A, "USB4110-GF-A", footprint="USB4110GFA", value="USB4110-GF-A")
-    j2 = Part(part_691243110009, "691243110009", footprint="footprints:691243110009", value="691243110009")
-
-    # --- Inductors ---
-    l1 = Part(SRP7028CC_150M, "SRP7028CC-150M", footprint="footprints:INDPM7366X300N", value="SRP7028CC-150M")
-
-    # --- Transistors / MOSFETs ---
-    q2 = Part(STL10N3LLH5, "STL10N3LLH5", footprint="footprints:STL10N3LLH5", value="STL10N3LLH5")
-    q3 = Part(part_2N7002NXAKR, "2N7002NXAKR", footprint="footprints:SOT95P230X110-3N", value="2N7002NXAKR")
-    q1 = Part(STL9P3LLH6, "STL9P3LLH6", footprint="footprints:STL9P3LLH6", value="STL9P3LLH6")
-
-    # --- Resistors ---
-    r43 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r2 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="360k")
-    r11 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="22k")
-    r37 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r7 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="360k")
-    r35 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r45 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0805_2012Metric", value="100m")
-    r36 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r6 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r22 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r21 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="22k")
-    r14 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="1k5")
-    r42 = Part(WSLP25125L000FEA, "WSLP25125L000FEA", footprint="footprints:RESC6432X89N", value="5m")
-    r8 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="360k")
-    r44 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0805_2012Metric", value="1M")
-    r47 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r46 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r13 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r16 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r27 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r34 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r23 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r1 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="1k5")
-    r24 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="22k")
-    r15 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="22k")
-    r32 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r9 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="360k")
-    r31 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r50 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="10")
-    r10 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="220k")
-    r30 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r18 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r28 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r19 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r48 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="100")
-    r41 = Part("Device", "R_Small", footprint="", value="Heater 2 OHM")
-    r29 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r12 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="22k")
-    r26 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r33 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r4 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r3 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="220k")
-    r49 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="10")
-    r20 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r38 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r39 = Part("Device", "R_Small", footprint="", value="Heater")
-    r25 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="4k7")
-    r5 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="1k5")
-    r17 = Part("Device", "R_Small", footprint="Resistor_SMD:R_0603_1608Metric", value="1k5")
-    r40 = Part("Device", "R_Small", footprint="", value="Heater")
-
-    # --- Switches ---
-    s3 = Part(ADTSM644KVTR, "ADTSM644KVTR", footprint="footprints:ADTSM644RVTR", value="ADTSM644RVTR")
-    s1 = Part(ADTSM644KVTR, "ADTSM644KVTR", footprint="footprints:ADTSM644RVTR", value="ADTSM644RVTR")
-    s2 = Part(ADTSM644KVTR, "ADTSM644KVTR", footprint="footprints:ADTSM644RVTR", value="ADTSM644RVTR")
-
-    # --- Thermocouples ---
-    tc2 = Part("Device", "Thermocouple", footprint="", value="TC")
-    tc1 = Part("Device", "Thermocouple", footprint="", value="TC")
-    tc3 = Part("Device", "Thermocouple", footprint="", value="TC")
-
-    # --- Display ---
-    tft1 = Part(Adafruit_240x320_TFT, "Adafruit_240x320_TFT", footprint="footprints:Adafruit_240x320_TFT", value="~")
-
-    # --- Test Points ---
-    tp4 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp1 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp10 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="Current_TP")
-    tp2 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp7 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp15 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp6 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp11 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="TC_TP")
-    tp3 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="3.3V_TP")
-    tp12 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="GND_TP")
-    tp17 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="SW_TP")
-    tp8 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp14 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp9 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="Current_TP")
-    tp13 = Part("Connector", "TestPoint", footprint="footprints:TSW-101-XX-YY-S", value="DIAG_TP")
-    tp5 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-    tp16 = Part("Connector", "TestPoint", footprint="TestPoint:TestPoint_Pad_D1.0mm", value="DIAG_TP")
-
-    # --- ICs / Modules ---
-    u2 = Part(PEC11J_9215F_S0015, "PEC11J-9220F-S0015", footprint="footprints:PEC11J9215FS0015", value="PEC11J-9215F-S0015")
-    u3 = Part(BSC014N04LS, "BSC014N04LS", footprint="footprints:BSC014N04LS", value="BSC014N04LS")
+    # Components
+    C1 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C1', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C10 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C10', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C11 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C11', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C12 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C12', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C13 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C13', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C14 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C14', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C15 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C15', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C16 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C16', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C17 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C17', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C18 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C18', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C19 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C19', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C2 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C2', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C20 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C20', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C21 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C21', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C22 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C22', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C23 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C23', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C24 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C24', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C25 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C25', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C26 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C26', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C27 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C27', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C28 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C28', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C29 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C29', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C3 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C3', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C30 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C30', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C31 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C31', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C32 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C32', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C33 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C33', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C34 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C34', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C35 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C35', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C37 = _make_part('EEV227M035A9MAA', 'EEV227M035A9MAA', ['1', '2'], value='220u', footprint='CAPAE830X1050N', ref='C37', fields={'Height': '10.5', 'Mouser Part Number': '80-EEV227M035A9MAA', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/KEMET/EEV227M035A9MAA?qs=T9vdlufmP8ywqIZcgRBkMQ%3D%3D', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'EEV227M035A9MAA', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    C4 = Part('Device', 'C_Small', value='1n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C4', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C102K3GAC', 'Mouser Part Number': '80-C0603C102K3G', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C5 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C5', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C6 = Part('Device', 'C_Small', value='1n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C6', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C102K3GAC', 'Mouser Part Number': '80-C0603C102K3G', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C7 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C7', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C8 = Part('Device', 'C_Small', value='10u', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C8', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'GRM188R6YA106MA73J', 'Mouser Part Number': '81-GRM188R6YA106MA3J', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    C9 = Part('Device', 'C_Small', value='100n', footprint='Capacitor_SMD:C_0603_1608Metric', ref='C9', fields={'Assembly Comment': '', 'Manufacturer_Name': 'KEMET', 'Manufacturer_Part_Number': 'C0603C104J5RACTU', 'Mouser Part Number': '80-C0603C104J5R', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'capacitor cap', 'ki_fp_filters': 'C_*'})
+    D1 = _make_part('BAV199WQ-7', 'BAV199WQ-7', ['1', '2', '3'], value='BAV199WQ-7', footprint='footprints:SOT65P210X110-3N', ref='D1', fields={'Height': '1.1', 'Mouser Part Number': '621-BAV199WQ-7', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/BAV199WQ-7?qs=xLhQT1EE4V%252BrO8tFabP6bQ%3D%3D', 'Manufacturer_Name': 'Diodes Incorporated', 'Manufacturer_Part_Number': 'BAV199WQ-7', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    D10 = _make_part('PMEG6020ER_115', 'PMEG6020ER,115', ['1', '2'], value='PMEG6020ER', footprint='footprints:PMEG6020ER115', ref='D10', fields={'Height': '1.1', 'Mouser Part Number': '771-PMEG6020ER-115', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG6020ER115?qs=5DYmZrWuUErk3dU9e9SSpA%3D%3D', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'PMEG6020ER,115', 'Assembly Comment': '', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    D2 = _make_part('BAV199WQ-7', 'BAV199WQ-7', ['1', '2', '3'], value='BAV199WQ-7', footprint='footprints:SOT65P210X110-3N', ref='D2', fields={'Height': '1.1', 'Mouser Part Number': '621-BAV199WQ-7', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/BAV199WQ-7?qs=xLhQT1EE4V%252BrO8tFabP6bQ%3D%3D', 'Manufacturer_Name': 'Diodes Incorporated', 'Manufacturer_Part_Number': 'BAV199WQ-7', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    D3 = _make_part('SMF4L24AT1G', 'SMF4L24AT1G', ['1', '2'], value='SMF4L24AT1G', footprint='footprints:SODFL3619X98N', ref='D3', fields={'Height': '0.98', 'Mouser Part Number': '576-SMF4L24AT1G', 'Mouser Price/Stock': '', 'Manufacturer_Name': 'LITTELFUSE', 'Manufacturer_Part_Number': 'SMF4L24AT1G', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    D4 = _make_part('SMF4L24AT1G', 'SMF4L24AT1G', ['1', '2'], value='SMF4L24AT1G', footprint='footprints:SODFL3619X98N', ref='D4', fields={'Height': '0.98', 'Mouser Part Number': '576-SMF4L24AT1G', 'Mouser Price/Stock': '', 'Manufacturer_Name': 'LITTELFUSE', 'Manufacturer_Part_Number': 'SMF4L24AT1G', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    D5 = Part('Device', 'D_Schottky_Dual_Series_AKC', value='BAT54S', footprint='footprints:SOT95P230X110-3N', ref='D5', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'BAT54S,215', 'Mouser Part Number': '771-BAT54S-T/R', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/BAT54S215?qs=me8TqzrmIYVOaf3j7zH0Wg%3D%3D', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'diode'})
+    D6 = Part('Device', 'D_Schottky_Dual_Series_AKC', value='BAT54S', footprint='footprints:SOT95P230X110-3N', ref='D6', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'BAT54S,215', 'Mouser Part Number': '771-BAT54S-T/R', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/BAT54S215?qs=me8TqzrmIYVOaf3j7zH0Wg%3D%3D', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'diode'})
+    D7 = Part('Device', 'D_Schottky_Dual_Series_AKC', value='BAT54S', footprint='footprints:SOT95P230X110-3N', ref='D7', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'BAT54S,215', 'Mouser Part Number': '771-BAT54S-T/R', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/BAT54S215?qs=me8TqzrmIYVOaf3j7zH0Wg%3D%3D', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'diode'})
+    D8 = Part('Device', 'D_Schottky_Dual_Series_AKC', value='BAT54S', footprint='footprints:SOT95P230X110-3N', ref='D8', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'BAT54S,215', 'Mouser Part Number': '771-BAT54S-T/R', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/BAT54S215?qs=me8TqzrmIYVOaf3j7zH0Wg%3D%3D', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'diode'})
+    D9 = _make_part('PMEG6020ER_115', 'PMEG6020ER,115', ['1', '2'], value='PMEG6020ER', footprint='footprints:PMEG6020ER115', ref='D9', fields={'Height': '1.1', 'Mouser Part Number': '771-PMEG6020ER-115', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG6020ER115?qs=5DYmZrWuUErk3dU9e9SSpA%3D%3D', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': 'PMEG6020ER,115', 'Assembly Comment': '', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    F1 = _make_part('0154007.DRL_1', '0154007.DRL_1', ['1', '2'], value='0154007.DR', footprint='footprints:0154100DR', ref='F1', fields={'Height': '3.81', 'Mouser Part Number': '576-0154007.DR', 'Manufacturer_Name': 'LITTELFUSE', 'Manufacturer_Part_Number': '0154007.DR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    F2 = _make_part('SF-2410FP100W-2', 'SF-2410FP100W-2', ['1', '2'], value='SF-2410FP100W-2', footprint='footprints:SF2410FP100W2', ref='F2', fields={'Height': '2.36', 'Mouser Part Number': '652-SF-2410FP100W-2', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Bourns/SF-2410FP100W-2?qs=55YtniHzbhBKO2quK4sgow%3D%3D', 'Manufacturer_Name': 'Bourns', 'Manufacturer_Part_Number': 'SF-2410FP100W-2', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    FB1 = _make_part('BLM18HE601SN1D', 'BLM18HE601SN1D', ['1', '2'], value='BLM18HE601SN1D', footprint='Resistor_SMD:R_0603_1608Metric', ref='FB1', fields={'Height': '0.95', 'Mouser Part Number': '81-BLM18HE601SN1D', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18HE601SN1D?qs=%2F%252BYoplLUB5hymM76VL7Sqw%3D%3D', 'Manufacturer_Name': 'Murata Electronics', 'Manufacturer_Part_Number': 'BLM18HE601SN1D', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    FID1 = Part('Mechanical', 'Fiducial', value='Fiducial', footprint='Fiducial:Fiducial_0.75mm_Mask1.5mm', ref='FID1', fields={'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'fiducial marker', 'ki_fp_filters': 'Fiducial*'})
+    FID2 = Part('Mechanical', 'Fiducial', value='Fiducial', footprint='Fiducial:Fiducial_0.75mm_Mask1.5mm', ref='FID2', fields={'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'fiducial marker', 'ki_fp_filters': 'Fiducial*'})
+    FID3 = Part('Mechanical', 'Fiducial', value='Fiducial', footprint='Fiducial:Fiducial_0.75mm_Mask1.5mm', ref='FID3', fields={'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'fiducial marker', 'ki_fp_filters': 'Fiducial*'})
+    H1 = Part('Mechanical', 'MountingHole', value='MountingHole', footprint='MountingHole:MountingHole_2.5mm', ref='H1', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'mounting hole', 'ki_fp_filters': 'MountingHole*'})
+    H2 = Part('Mechanical', 'MountingHole', value='MountingHole', footprint='MountingHole:MountingHole_2.5mm', ref='H2', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'mounting hole', 'ki_fp_filters': 'MountingHole*'})
+    IC1 = _make_part('TLV76733DRVR', 'TLV76733DRVR', ['1', '2', '3', '4', '5', '6', '7'], value='TLV76733DRVR', footprint='footprints:SON65P200X200X80-7N', ref='IC1', fields={'Height': '0.8', 'Mouser Part Number': '595-TLV76733DRVR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV76733DRVR?qs=9r4v7xj2LnmGIkwTuPlHig%3D%3D', 'Manufacturer_Name': 'Texas Instruments', 'Manufacturer_Part_Number': 'TLV76733DRVR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC2 = _make_part('OPA2387DSGT_1', 'OPA2387DSGT_1', ['1', '2', '3', '5', '6', '7', '4', '8', '9'], value='OPA2387DSGT', footprint='footprints:SON50P200X200X80-9N', ref='IC2', fields={'Height': '0.8', 'Mouser Part Number': '595-OPA2387DSGT', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/OPA2387DSGT?qs=MyNHzdoqoQIl7LJ1IzdkFA%3D%3D', 'Manufacturer_Name': 'Texas Instruments', 'Manufacturer_Part_Number': 'OPA2387DSGT', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC3 = _make_part('LMR54406DBVR_1', 'LMR54406DBVR_1', ['1', '2', '3', '4', '5', '6'], value='LMR54406DBVR', footprint='SOT95P280X145-6N', ref='IC3', fields={'Height': '1.45', 'Mouser Part Number': '595-LMR54406DBVR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMR54406DBVR?qs=rSMjJ%252B1ewcQLNU8KVBwgHQ%3D%3D', 'Manufacturer_Name': 'Texas Instruments', 'Manufacturer_Part_Number': 'LMR54406DBVR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC4 = _make_part('STM32G431CBT6', 'STM32G431CBT6', ['1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '2', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '3', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '4', '40', '41', '42', '43', '44', '45', '46', '47', '48', '5', '6', '7', '8', '9'], value='STM32G431CBT6', footprint='footprints:QFP50P900X900X160-48N', ref='IC4', fields={'Height': '1.6', 'Mouser Part Number': '511-STM32G431CBT6', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32G431CBT6?qs=T3oQrply3y8OocyGDXq5wg%3D%3D', 'Manufacturer_Name': 'STMicroelectronics', 'Manufacturer_Part_Number': 'STM32G431CBT6', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC5 = _make_part('TPD4E1U06DBVR', 'TPD4E1U06DBVR', ['1', '2', '3', '4', '5', '6'], value='TPD4E1U06DBVR', footprint='SOT95P280X145-6N', ref='IC5', fields={'Height': '1.45', 'Mouser Part Number': '595-TPD4E1U06DBVR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD4E1U06DBVR?qs=%2FCrDlo5IrVMRcCeY4Dk4aQ%3D%3D', 'Manufacturer_Name': 'Texas Instruments', 'Manufacturer_Part_Number': 'TPD4E1U06DBVR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC6 = _make_part('STUSB4500QTR', 'STUSB4500QTR', ['1', '10', '12', '13', '16', '18', '2', '21', '22', '23', '24', '25', '4', '5', '6', '7', '8', '9'], value='STUSB4500QTR', footprint='footprints:QFN50P400X400X100-25N-D', ref='IC6', fields={'Height': '1', 'Mouser Part Number': '511-STUSB4500QTR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STUSB4500QTR?qs=wUXugUrL1qyQbYMSzG1ujg%3D%3D', 'Manufacturer_Name': 'STMicroelectronics', 'Manufacturer_Part_Number': 'STUSB4500QTR', 'Assembly Comment': '', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC7 = _make_part('MAX16171ATA_VY+T', 'MAX16171ATA_VY+T', ['1', '2', '3', '4', '5', '8', '9'], value='MAX16171ATA_VY+T', footprint='footprints:SON50P300X200X80-9N', ref='IC7', fields={'Height': '0.8', 'Mouser Part Number': '700-MAX16171ATA/VY+T', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX16171ATA-VY%2bT?qs=zW32dvEIR3uJUsRKfY9NHQ%3D%3D', 'Manufacturer_Name': 'Analog Devices', 'Manufacturer_Part_Number': 'MAX16171ATA/VY+T', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC8 = _make_part('LTC4440AHMS8E-5#PBF', 'LTC4440AHMS8E-5#PBF', ['1', '2', '3', '4', '5', '6', '7', '8', '9'], value='LTC4440AHMS8E', footprint='footprints:SOP65P490X110-9N', ref='IC8', fields={'Height': '1.1', 'Mouser Part Number': '584-C4440AHMS8E-5PBF', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC4440AHMS8E-5PBF?qs=hVkxg5c3xu86VC%252BBJjm7uA%3D%3D', 'Manufacturer_Name': 'Analog Devices', 'Manufacturer_Part_Number': 'LTC4440AHMS8E-5#PBF', 'Assembly Comment': '', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    IC9 = _make_part('INA281A5QDBVRQ1', 'INA281A5QDBVRQ1', ['1', '2', '3', '4', '5'], value='INA281A5QDBVRQ1', footprint='footprints:SOT95P280X145-5N', ref='IC9', fields={'Height': '1.45', 'Mouser Part Number': '595-INA281A5QDBVRQ1', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA281A5QDBVRQ1?qs=hd1VzrDQEGgwv71iGabWgQ%3D%3D', 'Manufacturer_Name': 'Texas Instruments', 'Manufacturer_Part_Number': 'INA281A5QDBVRQ1', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J1 = _make_part('USB4110-GF-A', 'USB4110-GF-A', ['A1', 'A12', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'B1', 'B12', 'B4', 'B5', 'B6', 'B7', 'B8', 'B9', 'S2'], value='USB4110-GF-A', footprint='USB4110GFA', ref='J1', fields={'Height': '3.26', 'Mouser Part Number': '640-USB4110-GF-A', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/GCT/USB4110-GF-A?qs=KUoIvG%2F9IlYiZvIXQjyJeA%3D%3D', 'Manufacturer_Name': 'GCT (GLOBAL CONNECTOR TECHNOLOGY)', 'Manufacturer_Part_Number': 'USB4110-GF-A', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J2 = _make_part('691243110009', '691243110009', ['1', '2', '3', '4', '5', '6', '7', '8', '9'], value='691243110009', footprint='footprints:691243110009', ref='J2', fields={'Height': '9.2', 'Mouser Part Number': '710-691243110009', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691243110009', 'Manufacturer_Name': 'Wurth Elektronik', 'Manufacturer_Part_Number': '691243110009', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J3 = _make_part('TSW-102-07-T-S_1', 'TSW-102-07-T-S_1', ['1', '2'], value='TSW-102-07-T-S', footprint='Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical', ref='J3', fields={'Height': '', 'Mouser Part Number': '200-TSW10207TS', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Samtec/TSW-102-07-T-S?qs=hzq9O0YpnZuE%252BS9CaLPVlQ%3D%3D', 'Manufacturer_Name': 'SAMTEC', 'Manufacturer_Part_Number': 'TSW-102-07-T-S', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes'})
+    J4 = _make_part('61300611821', '61300611821', ['1', '2', '3', '4', '5', '6'], value='61300611821', footprint='footprints:RHDR6W97P0X254_1X6_1574X250X865P', ref='J4', fields={'Height': '8.65', 'Mouser Part Number': '710-61300611821', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/61300611821?qs=iLbezkQI%252BsgS21jF2eozhA%3D%3D', 'Manufacturer_Name': 'Wurth Elektronik', 'Manufacturer_Part_Number': '61300611821', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J5 = _make_part('TSW-102-07-T-S_1', 'TSW-102-07-T-S_1', ['1', '2'], value='TSW-102-07-T-S', footprint='footprints:TSW-102-XX-YY-S', ref='J5', fields={'Height': '', 'Mouser Part Number': '200-TSW10207TS', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Samtec/TSW-102-07-T-S?qs=hzq9O0YpnZuE%252BS9CaLPVlQ%3D%3D', 'Manufacturer_Name': 'SAMTEC', 'Manufacturer_Part_Number': 'TSW-102-07-T-S', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J6 = _make_part('TSW-102-07-T-S_1', 'TSW-102-07-T-S_1', ['1', '2'], value='TSW-102-07-T-S', footprint='footprints:TSW-102-XX-YY-S', ref='J6', fields={'Height': '', 'Mouser Part Number': '200-TSW10207TS', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Samtec/TSW-102-07-T-S?qs=hzq9O0YpnZuE%252BS9CaLPVlQ%3D%3D', 'Manufacturer_Name': 'SAMTEC', 'Manufacturer_Part_Number': 'TSW-102-07-T-S', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J7 = _make_part('TSW-108-07-T-S', 'TSW-108-07-T-S', ['1', '2', '3', '4', '5', '6', '7', '8'], value='TSW-108-07-T-S', footprint='TSW-108-XX-YY-S', ref='J7', fields={'Height': '', 'Mouser Part Number': '200-TSW10807TS', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Samtec/TSW-108-07-T-S?qs=hzq9O0YpnZvsSJKdpkY6dA%3D%3D', 'Manufacturer_Name': 'SAMTEC', 'Manufacturer_Part_Number': 'TSW-108-07-T-S', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    J8 = Part('Connector', 'Conn_01x01_Pin', value='Conn_01x01_Pin', footprint='Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical', ref='J8', fields={'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'connector', 'ki_fp_filters': 'Connector*:*_1x??_*'})
+    L1 = _make_part('SRP7028CC-150M', 'SRP7028CC-150M', ['1', '2'], value='SRP7028CC-150M', footprint='footprints:INDPM7366X300N', ref='L1', fields={'Height': '3', 'Mouser Part Number': '652-SRP7028CC-150M', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Bourns/SRP7028CC-150M?qs=1Kr7Jg1SGW%252BdV87frXW7uQ%3D%3D', 'Manufacturer_Name': 'Bourns', 'Manufacturer_Part_Number': 'SRP7028CC-150M', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    LS1 = _make_part('CMI-9653S-SMT-TR_1', 'CMI-9653S-SMT-TR_1', ['1', '2'], value='CMI-9653S-SMT-TR', footprint='footprints:CMI9653SSMTTR', ref='LS1', fields={'Height': '5', 'Mouser Part Number': '490-CMI-9653S-SMT-TR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/CUI-Devices/CMI-9653S-SMT-TR?qs=qCxwlXJ4fnz7UpLQu8UKbg%3D%3D', 'Manufacturer_Name': 'CUI Devices', 'Manufacturer_Part_Number': 'CMI-9653S-SMT-TR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    Q1 = _make_part('STL9P3LLH6', 'STL9P3LLH6', ['1', '4', '5'], value='STL9P3LLH6', footprint='footprints:STL9P3LLH6', ref='Q1', fields={'Height': '', 'Mouser Part Number': '511-STL9P3LLH6', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STL9P3LLH6?qs=mKNKSX85ZJeHtH1e81LEbQ%3D%3D', 'Manufacturer_Name': 'STMicroelectronics', 'Manufacturer_Part_Number': 'STL9P3LLH6', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    Q2 = _make_part('STL10N3LLH5', 'STL10N3LLH5', ['1', '4', '5'], value='STL10N3LLH5', footprint='footprints:STL10N3LLH5', ref='Q2', fields={'Height': '1', 'Mouser Part Number': '511-STL10N3LLH5', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STL10N3LLH5?qs=0gj%2FgiofzsOGxczN3DPYlA%3D%3D', 'Manufacturer_Name': 'STMicroelectronics', 'Manufacturer_Part_Number': 'STL10N3LLH5', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    Q3 = _make_part('2N7002NXAKR', '2N7002NXAKR', ['1', '2', '3'], value='2N7002NXAKR', footprint='footprints:SOT95P230X110-3N', ref='Q3', fields={'Height': '1.1', 'Manufacturer_Name': 'Nexperia', 'Manufacturer_Part_Number': '2N7002NXAKR', 'Mouser Part Number': '771-2N7002NXAKR', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Nexperia/2N7002NXAKR?qs=%252B6g0mu59x7JoAsZYPFXqhw%3D%3D', 'Arrow Part Number': '2N7002NXAKR', 'Arrow Price/Stock': 'https://www.arrow.com/en/products/2n7002nxakr/nexperia?region=nac', 'Mouser Testing Part Number': '', 'Mouser Testing Price/Stock': '', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    R1 = Part('Device', 'R_Small', value='1k5', footprint='Resistor_SMD:R_0603_1608Metric', ref='R1', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-H3ED1501V', 'Mouser Part Number': '667-ERJ-H3ED1501V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R10 = Part('Device', 'R_Small', value='220k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R10', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED2203V', 'Mouser Part Number': '667-ERJ-3RED2203V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R11 = Part('Device', 'R_Small', value='22k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R11', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-UP3J223V', 'Mouser Part Number': '667-ERJ-UP3J223V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R12 = Part('Device', 'R_Small', value='22k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R12', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-UP3J223V', 'Mouser Part Number': '667-ERJ-UP3J223V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R13 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R13', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R14 = Part('Device', 'R_Small', value='1k5', footprint='Resistor_SMD:R_0603_1608Metric', ref='R14', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-H3ED1501V', 'Mouser Part Number': '667-ERJ-H3ED1501V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R15 = Part('Device', 'R_Small', value='22k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R15', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-UP3J223V', 'Mouser Part Number': '667-ERJ-UP3J223V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R16 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R16', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R17 = Part('Device', 'R_Small', value='1k5', footprint='Resistor_SMD:R_0603_1608Metric', ref='R17', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-H3ED1501V', 'Mouser Part Number': '667-ERJ-H3ED1501V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R18 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R18', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R19 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R19', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R2 = Part('Device', 'R_Small', value='360k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R2', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED3603V', 'Mouser Part Number': '667-ERJ-3RED3603V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R20 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R20', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R21 = Part('Device', 'R_Small', value='22k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R21', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-UP3J223V', 'Mouser Part Number': '667-ERJ-UP3J223V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R22 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R22', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R23 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R23', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R24 = Part('Device', 'R_Small', value='22k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R24', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-UP3J223V', 'Mouser Part Number': '667-ERJ-UP3J223V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R25 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R25', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R26 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R26', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R27 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R27', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R28 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R28', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R29 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R29', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R3 = Part('Device', 'R_Small', value='220k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R3', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED2203V', 'Mouser Part Number': '667-ERJ-3RED2203V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R30 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R30', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R31 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R31', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R32 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R32', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R33 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R33', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R34 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R34', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R35 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R35', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R36 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R36', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R37 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R37', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R38 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R38', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R4 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R4', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R42 = _make_part('WSLP25125L000FEA', 'WSLP25125L000FEA', ['1', '2'], value='5m', footprint='footprints:RESC6432X89N', ref='R42', fields={'Height': '0.889', 'Mouser Part Number': '71-WSLP25125L000FEA', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Vishay-Dale/WSLP25125L000FEA?qs=2spUtbtSOvg97Y46VeGhKA%3D%3D', 'Manufacturer_Name': 'Vishay', 'Manufacturer_Part_Number': 'WSLP25125L000FEA', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    R43 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R43', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R44 = Part('Device', 'R_Small', value='1M', footprint='Resistor_SMD:R_0805_2012Metric', ref='R44', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-6GEYJ105V', 'Mouser Part Number': '667-ERJ-6GEYJ105V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R45 = Part('Device', 'R_Small', value='100m', footprint='Resistor_SMD:R_0805_2012Metric', ref='R45', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-6DSFR10V', 'Mouser Part Number': '667-ERJ-6DSFR10V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R46 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R46', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R47 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R47', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R48 = Part('Device', 'R_Small', value='100', footprint='Resistor_SMD:R_0603_1608Metric', ref='R48', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-P03F1000V', 'Mouser Part Number': '667-ERJ-P03F1000V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R49 = Part('Device', 'R_Small', value='10', footprint='Resistor_SMD:R_0603_1608Metric', ref='R49', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED10R0V', 'Mouser Part Number': '667-ERJ-3RED10R0V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R5 = Part('Device', 'R_Small', value='1k5', footprint='Resistor_SMD:R_0603_1608Metric', ref='R5', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-H3ED1501V', 'Mouser Part Number': '667-ERJ-H3ED1501V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R50 = Part('Device', 'R_Small', value='10', footprint='Resistor_SMD:R_0603_1608Metric', ref='R50', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED10R0V', 'Mouser Part Number': '667-ERJ-3RED10R0V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R6 = Part('Device', 'R_Small', value='4k7', footprint='Resistor_SMD:R_0603_1608Metric', ref='R6', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RBD4701V', 'Mouser Part Number': '667-ERJ-3RBD4701V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R7 = Part('Device', 'R_Small', value='360k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R7', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED3603V', 'Mouser Part Number': '667-ERJ-3RED3603V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R8 = Part('Device', 'R_Small', value='360k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R8', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED3603V', 'Mouser Part Number': '667-ERJ-3RED3603V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    R9 = Part('Device', 'R_Small', value='360k', footprint='Resistor_SMD:R_0603_1608Metric', ref='R9', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Panasonic', 'Manufacturer_Part_Number': 'ERJ-3RED3603V', 'Mouser Part Number': '667-ERJ-3RED3603V', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'ki_keywords': 'R resistor', 'ki_fp_filters': 'R_*'})
+    S2 = _make_part('ADTSM644KVTR', 'ADTSM644KVTR', ['1', '2'], value='ADTSM644RVTR', footprint='footprints:ADTSM644RVTR', ref='S2', fields={'Height': '7.3', 'Mouser Part Number': '642-ADTSM644RVTR', 'Manufacturer_Name': 'Apem', 'Manufacturer_Part_Number': 'ADTSM644RVTR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    S3 = _make_part('ADTSM644KVTR', 'ADTSM644KVTR', ['1', '2'], value='ADTSM644RVTR', footprint='footprints:ADTSM644RVTR', ref='S3', fields={'Height': '7.3', 'Mouser Part Number': '642-ADTSM644RVTR', 'Manufacturer_Name': 'Apem', 'Manufacturer_Part_Number': 'ADTSM644RVTR', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    TFT1 = _make_part('Adafruit_240x320_TFT', 'Adafruit_240x320_TFT', ['2', '3', '4', '5', '6', '7', '8', '9'], value='Adafruit_240x320_TFT', footprint='footprints:Adafruit_240x320_TFT', ref='TFT1', fields={'Manufacturer_Name': 'Adafruit', 'Manufacturer_Part_Number': '4311', 'Mouser Part Number': '485-4311', 'Mouser Price/Stock': 'https://www.mouser.co.uk/ProductDetail/Adafruit/4311?qs=P1JMDcb91o4a8KwJfafmzw%3D%3D', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    TP1 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP1', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP10 = Part('Connector', 'TestPoint', value='Current_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP10', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP11 = Part('Connector', 'TestPoint', value='TC_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP11', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP12 = Part('Connector', 'TestPoint', value='GND_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP12', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP13 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='footprints:TSW-101-XX-YY-S', ref='TP13', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP14 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP14', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP15 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP15', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP16 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP16', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP17 = Part('Connector', 'TestPoint', value='SW_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP17', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP2 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP2', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP3 = Part('Connector', 'TestPoint', value='3.3V_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP3', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP4 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP4', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP5 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP5', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP6 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP6', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP7 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP7', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP8 = Part('Connector', 'TestPoint', value='DIAG_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP8', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    TP9 = Part('Connector', 'TestPoint', value='Current_TP', footprint='TestPoint:TestPoint_Pad_D1.0mm', ref='TP9', fields={'Assembly Comment': 'N/A', 'Manufacturing comment': 'Do Not Place', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch', 'exclude_from_bom': 'yes', 'ki_keywords': 'test point tp', 'ki_fp_filters': 'Pin* Test*'})
+    U2 = _make_part('PEC11J-9215F-S0015', 'PEC11J-9220F-S0015', ['A1', 'B1', 'C1', 'D1', 'E1', 'MP'], value='PEC11J-9215F-S0015', footprint='footprints:PEC11J9215FS0015', ref='U2', fields={'Height': '25', 'Mouser Part Number': '652-PEC11J9215FS0015', 'Manufacturer_Name': 'Bourns', 'Manufacturer_Part_Number': 'PEC11J-9215F-S0015', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
+    U3 = _make_part('BSC014N04LS', 'BSC014N04LS', ['1', '10', '9'], value='BSC014N04LS', footprint='footprints:BSC014N04LS', ref='U3', fields={'Assembly Comment': '', 'Manufacturer_Name': 'Infineon Technologies', 'Manufacturer_Part_Number': 'BSC014N04LSATMA1', 'Mouser Part Number': '726-BSC014N04LSATMA1', 'Manufacturing comment': '', 'Sheetname': 'Root', 'Sheetfile': 'AxxSolder.kicad_sch'})
 
 
-# ─── Run ─────────────────────────────────────────────────────
-print("Loading components...")
-AxxSolder()
-print("✅ All components loaded!")
-print("Generating netlist...")
-generate_netlist(tool=KICAD9)
-print("✅ Netlist generated successfully! Check for AxxSolder_skidl.net in the same folder.")
+    # Connections
+    _p_3_3V += C15['1'], C16['1'], C17['1'], C2['1'], C20['2'], D1['2'], D2['2'], D5['2'], D6['2'], D7['2'], D8['2'], FB1['2'], IC1['1'], IC1['2'], IC2['8'], IC4['1'], IC4['2'], IC4['24'], IC4['36'], IC4['48'], IC9['5'], J4['2'], J7['1'], R18['1'], R19['1'], R20['1'], R26['2'], R27['2'], R35['2'], R36['1'], S2['2'], S3['2'], TP3['1'], U2['D1']
+    _p_7_5V += C1['1'], C32['1'], C33['1'], C7['2'], C8['2'], D9['2'], IC1['4'], IC1['6'], IC8['3'], L1['2'], LS1['2'], R23['1'], R7['2'], R8['2']
+    BLUE += D10['2'], J2['6'], R4['1'], R42['1']
+    BOOST += C30['2'], C31['2'], D9['1'], IC8['6']
+    Buzzer += IC4['44'], R34['1']
+    CC1 += IC5['1'], IC6['1'], IC6['2'], J1['A5'], TP7['1']
+    CC1_ += IC4['43'], TP1['1']
+    CC2 += IC5['6'], IC6['4'], IC6['5'], J1['B5'], TP8['1']
+    CC2_ += IC4['41'], TP2['1']
+    CURRENT += C6['1'], IC4['6'], R49['1'], TP10['1']
+    ENC_A += C29['1'], IC4['8'], R36['2'], R48['1']
+    ENC_B += C28['1'], IC4['40'], R35['1'], R47['1']
+    GREEN += F2['2'], J2['5'], R44['2'], R5['1']
+    H_sense1 += C27['1'], J2['3'], R20['2'], R22['2']
+    H_sense2 += C26['1'], J2['2'], R19['2'], R25['2']
+    Handle_inp1 += D5['3'], IC4['12'], R22['1']
+    Handle_inp2 += D6['3'], IC4['13'], R25['1']
+    Heater += IC4['5'], IC8['1'], R38['1'], TP17['1']
+    I_LEAK += IC4['9'], IC9['1'], TP9['1']
+    NRST += C14['2'], IC4['7'], J4['3']
+    RED += C30['1'], C31['1'], D10['1'], IC8['8'], J2['7'], R1['1'], U3['1']
+    S1 += R16['2'], U2['E1']
+    SCL += IC4['39'], IC6['7'], R26['1'], TP15['1']
+    SDA += IC4['46'], IC6['8'], R27['1'], TP16['1']
+    SD_CS += IC4['22'], J8['1']
+    SPI_CS += IC4['28'], J7['6']
+    SPI_DC += IC4['25'], J7['8']
+    SPI_MOSI += IC4['29'], J7['5']
+    SPI_RST += IC4['26'], J7['7']
+    SPI_SCK += IC4['27'], J7['3']
+    SW1 += C21['1'], IC4['42'], R16['1'], R30['1']
+    SW2 += C22['1'], IC4['15'], R31['1'], R43['1']
+    SW3 += C23['1'], IC4['45'], R32['1'], R46['1']
+    SWCLK += IC4['38'], J1['B8'], J4['4']
+    SWDIO += IC4['37'], J1['A8'], J4['5']
+    S_sense += C25['1'], J2['1'], R18['2'], R29['2']
+    Stand_inp += D8['3'], IC4['14'], R29['1']
+    TC += C4['1'], IC4['11'], R50['1'], TP11['1']
+    USART_RX += IC4['32'], TP13['1']
+    USART_TX += IC4['31'], J4['6']
+    USB_D_p += IC4['34'], IC5['4'], J1['A6'], J1['B6']
+    USB_D_n += IC4['33'], IC5['3'], J1['A7'], J1['B7']
+    USR1 += IC4['30'], TP4['1']
+    USR2 += IC4['16'], TP6['1']
+    USR3 += IC4['17'], TP5['1']
+    USR4 += IC4['18'], J3['2'], TP14['1']
+    VBUS += C10['2'], C11['1'], D3['1'], IC6['24'], J1['A4'], J1['A9'], J1['B4'], J1['B9'], Q1['1'], R12['2'], R14['2']
+    VBUS_IN += D7['3'], IC4['10'], R28['2']
+    VCCA += C18['1'], C19['1'], FB1['1'], IC4['20'], IC4['21']
+    VDD_IN += F1['2'], IC7['8'], J2['9'], Q2['5']
+    VDD_IN_USBCPD += C9['2'], IC7['2'], IC7['3'], IC7['4'], Q1['5'], Q2['1'], R17['2']
+    Earth += IC9['4'], J2['4'], R45['1']
+    GND += C1['2'], C10['1'], C11['2'], C12['2'], C13['2'], C14['1'], C15['2'], C16['2'], C17['2'], C18['2'], C19['2'], C2['2'], C20['1'], C21['2'], C22['2'], C23['2'], C24['2'], C25['2'], C26['2'], C27['2'], C28['2'], C29['2'], C32['2'], C33['2'], C34['1'], C35['1'], C37['2'], C4['2'], C5['1'], C6['2'], C7['1'], C8['1'], D1['1'], D2['1'], D3['2'], D4['2'], D5['1'], D6['1'], D7['1'], D8['1'], IC1['3'], IC1['5'], IC1['7'], IC2['4'], IC2['9'], IC3['2'], IC4['19'], IC4['23'], IC4['3'], IC4['35'], IC4['4'], IC4['47'], IC5['2'], IC6['10'], IC6['12'], IC6['13'], IC6['22'], IC6['25'], IC6['6'], IC7['5'], IC7['9'], IC8['2'], IC8['4'], IC8['9'], IC9['2'], J1['A1'], J1['A12'], J1['B1'], J1['B12'], J2['8'], J3['1'], J4['1'], J7['2'], Q3['2'], R11['1'], R2['2'], R3['2'], R30['2'], R31['2'], R32['2'], R33['2'], R37['2'], R38['2'], R42['2'], R6['2'], TP12['1'], U2['B1'], U2['MP']
+    Net__C9_Pad1_ += C9['1'], R13['2']
+    Net__C24_Pad1_ += C24['1'], R24['1'], R28['1'], R33['1']
+    Net__IC2_Pad1_ += IC2['1'], R50['2'], R9['1']
+    Net__IC2_Pad7_ += IC2['7'], R10['1'], R49['2']
+    Net__IC2A_pos += D1['3'], IC2['3'], R1['2'], R2['1']
+    Net__IC2A_neg += D2['3'], IC2['2'], R5['2'], R9['2']
+    Net__IC2B_pos += IC2['5'], R3['1'], R4['2']
+    Net__IC2B_neg += IC2['6'], R10['2'], R6['1']
+    Net__IC3_CB_ += C3['1'], IC3['1']
+    Net__IC3_FB_ += IC3['3'], R11['2'], R7['1'], R8['1']
+    Net__IC3_SW_ += C3['2'], IC3['6'], L1['1']
+    Net__IC6_DISCH_ += IC6['9'], R17['1']
+    Net__IC6_VBUS_EN_SNK_ += IC6['16'], R15['1']
+    Net__IC6_VBUS_VS_DISCH_ += IC6['18'], R14['1']
+    Net__IC6_VREG_1V2_ += C13['1'], IC6['21']
+    Net__IC6_VREG_2V7_ += C12['1'], IC6['23']
+    Net__IC7_GATE_ += IC7['1'], Q2['4']
+    Net__IC8_TG_ += IC8['7'], U3['9']
+    Net__IC9_IN__ += F2['1'], IC9['3'], R44['1'], R45['2']
+    Net__LS1___ += LS1['1'], Q3['3'], R23['2']
+    Net__Q1_G_ += Q1['4'], R12['1'], R13['1'], R15['2']
+    Net__Q3_G_ += Q3['1'], R34['2'], R37['1']
+    Net__R21_Pad1_ += R21['1'], R24['2']
+    Net__R43_Pad2_ += R43['2'], S2['1']
+    Net__R46_Pad2_ += R46['2'], S3['1']
+    Net__R47_Pad2_ += R47['2'], U2['A1']
+    Net__R48_Pad2_ += R48['2'], U2['C1']
+    VDD += C34['2'], C35['2'], C37['1'], C5['2'], D4['1'], F1['1'], IC3['4'], IC3['5'], R21['2'], U3['10']
+    return
 
+
+if __name__ == '__main__':
+    import os
+
+    # Detect desktop path across Windows, macOS, and Linux
+    desktop = os.path.join(os.path.expanduser('~'), 'Desktop')
+    os.makedirs(desktop, exist_ok=True)
+
+    output_path = os.path.join(desktop, 'top.net')
+
+    top()
+    generate_netlist(file_=output_path)
+    print(f"Netlist saved to: {output_path}")
